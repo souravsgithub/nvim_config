@@ -71,9 +71,9 @@ function M.config()
     "bashls",
     "jsonls",
     "clangd",
-    "jdtls",
     "marksman",
     "eslint",
+    "jdtls"
   }
 
   local default_diagnostic_config = {

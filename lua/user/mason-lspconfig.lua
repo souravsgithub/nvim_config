@@ -3,7 +3,7 @@ local M = {
 }
 
 function M.config()
-  local servers = { "bashls", "clangd", "jsonls", "jdtls", "tsserver", "lua_ls", "marksman", "eslint" }
+  local servers = { "bashls", "clangd", "jsonls", "tsserver", "lua_ls", "marksman", "eslint" }
   require("mason-lspconfig").setup {
     ensure_installed = servers,
   }

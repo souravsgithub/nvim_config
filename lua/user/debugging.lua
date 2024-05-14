@@ -28,14 +28,13 @@ function M.config()
 		dapui.close()
 	end
 	-- keymaps for the debugger
-  -- <Ctrl-\+n will exit out of the DAP-terminal after inputting the text and hitting Enter
+	-- <Ctrl-\+n will exit out of the DAP-terminal after inputting the text and hitting Enter
 	keymap("n", "<leader>dt", dap.toggle_breakpoint, {})
 	keymap("n", "<leader>dc", dap.continue, {})
 	keymap("n", "<leader>di", dap.step_into, {})
 	keymap("n", "<leader>do", dap.step_over, {})
-  keymap("n", "<leader>dO", dap.step_out, {})
+	keymap("n", "<leader>dO", dap.step_out, {})
 	-- keymap("n", "<leader>dr", dap.toggle_repl, {})
-
 
 	-- configuration for codelldb
 	dap.adapters.codelldb = {
@@ -46,6 +45,7 @@ function M.config()
 			args = { "--port", "${port}" },
 		},
 	}
+
 	dap.configurations.cpp = {
 		{
 			name = "Launch file",
